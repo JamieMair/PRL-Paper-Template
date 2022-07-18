@@ -33,24 +33,28 @@ VS Code is a good choice for writing LaTeX, as it is compatible with Git and Git
 Create a file in `.vscode/snippets.code-snippets`:
 
 ```json
-"Equation": {
-    "prefix": ["\\beq", "\\equation"],
-    "body": [
-        "\\begin{equation}",
-        "\t\\$0",
-        "\\end{equation}"
-    ],
-    "description": "A standard template for an equation snippet in LaTeX."
-}
-"Figure": {
-    "prefix": ["\\figure", "\\fig"],
-    "body": [
-        "\\begin{figure}",
-        "\t\\centering",
-        "\t\\includegraphics[width=\\singlefigure]{figures/$0}",
-        "\t\\caption{\\label{fig:$1} $2}",
-        "\\end{figure}"
-    ],
-    "description": "A standard template for a single column figure in LaTeX."
+{
+    "Equation": {
+        "prefix": ["\\beq", "\\equation"],
+        "body": [
+            "\\begin{equation}",
+            "\t\\$1",
+            "\\end{equation}",
+			"$0"
+        ],
+        "description": "A standard template for an equation snippet in LaTeX."
+    },
+    "Figure": {
+        "prefix": ["\\figure", "\\fig"],
+        "body": [
+            "\\begin{figure}",
+            "\t\\centering",
+            "\t\\includegraphics[width=\\singlefigure]{figures/$1}",
+            "\t\\caption{\\label{fig:$2} $3}",
+            "\\end{figure}",
+            "$0"
+        ],
+        "description": "A standard template for a single column figure in LaTeX."
+    }
 }
 ```
