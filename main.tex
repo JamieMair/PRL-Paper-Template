@@ -1,0 +1,68 @@
+\documentclass[aps,pre,superscriptaddress,twocolumn,longbibliography]{revtex4-2}
+
+
+% Common Package References
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{epstopdf}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[colorlinks]{hyperref}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{float}
+\usepackage{epsfig}
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage[all]{xy}
+\usepackage{pbox}
+\usepackage{verbatim}
+\usepackage{braket}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage{cleveref}
+
+% Commenting commands
+
+% Template below: replace 'initials' with your initials
+%\newcommand{\initials}[1]{{\color{magenta}{\bf [INITIALS: #1]}}}
+
+
+% Custom Commands
+\newcommand{\singlefigure}{0.45\textwidth}
+
+
+\begin{document}
+
+% TITLE
+\title{PRL GitHub Template}
+
+% AUTHORS
+\author{John Doe}
+\email{john.doe@nottingham.ac.uk}
+\affiliation{School of Physics and Astronomy, University of Nottingham, Nottingham, NG7 2RD, UK}
+\author{Jane Doe}
+\email{jane.doe@nottingham.ac.uk}
+\affiliation{School of Physics and Astronomy, University of Nottingham, Nottingham, NG7 2RD, UK}
+
+\date{\today}
+
+\begin{abstract}
+\input{abstract} % Loads the abstract.tex file
+\end{abstract}
+
+\maketitle
+
+% SECTIONS
+% Each section is written in a different file
+\input{sections/introduction}
+\input{sections/results}
+\input{sections/conclusions}
+
+% BIBLIOGRAPHY
+\appendix
+\bibliography{references}
+
+\end{document}
