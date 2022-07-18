@@ -1,6 +1,22 @@
 # PRL-Paper-Template
 A basic template for a PRL paper
 
+## Getting Started
+
+First you will need a TeX distribution on your system. This will depend on your operating system, but on Windows you can install [MiKTeX](https://miktex.org/). This distribution may also work on other operating systems. Once installed, you must install the `revtex` package. 
+
+In Windows, search for "MiKTeX Console" and open this. Go to the "Packages" tab on the left hand side, and then search for `revtex`. There should be three options. Choose the most recent `revtex` package, which should be last updated 2020 or beyond. Right-click the option and install that package. I would also recommend installing `latexmk` via the same method. Next, go to Settings -> Package Installation -> Choose either "Always" or "Ask Me" for automatically downloading packages.
+
+## Compiling
+
+Go to the later section on VS Code for how to use an IDE to write your paper. This makes the process simpler.
+
+If you prefer working with the console, and have installed `latexmk`, one can simply run in the console (in the root folder of this repository):
+```bash
+latexmk main.tex -pdf
+```
+This will compile to `main.pdf`. If this command does not work, you need to add MiKTeX to your path, which should be easy enough with a quick google search.
+
 ## GitHub
 
 Try not to commit generated files. This includes `main.pdf`. If you want to share a current version of the `pdf`, create a release in GitHub, and upload a copy of `main.pdf` as a binary, and give it a tag. This will allow others to access the `pdf` without compiling the code, and will avoid all merge conflicts between users.
